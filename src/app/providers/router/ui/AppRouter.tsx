@@ -4,10 +4,18 @@ import {routerConfig} from "app/providers/router/config/routerConfig";
 
 const AppRouter = () => {
     return (
-        <React.Suspense fallback={<div>Loading</div>}>
+        <React.Suspense fallback={<div style={{padding: "20px"}}>Loading</div>} >
             <Routes>
                 {routerConfig.map(({element, path}) => {
-                    return <Route key={path} path={path} element={element}/>
+                    return <Route
+                        key={path}
+                        path={path}
+                        element={
+                            <div className='page-wrapper'>
+                                {element}
+                            </div>
+                        }
+                    />
                 })}
             </Routes>
         </React.Suspense>
