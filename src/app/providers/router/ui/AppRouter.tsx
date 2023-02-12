@@ -1,10 +1,10 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
-import {routerConfig} from "app/providers/router/config/routerConfig";
+import {Route, Routes} from 'react-router-dom';
+import {routerConfig} from 'app/providers/router/config/routerConfig';
 
 const AppRouter = () => {
     return (
-        <React.Suspense fallback={<div style={{padding: "20px"}}>Loading</div>} >
+        <React.Suspense fallback={<div style={{padding: '20px'}}>Loading</div>} >
             <Routes>
                 {routerConfig.map(({element, path}) => {
                     return <Route
@@ -15,7 +15,7 @@ const AppRouter = () => {
                                 {element}
                             </div>
                         }
-                    />
+                    />;
                 })}
             </Routes>
         </React.Suspense>
