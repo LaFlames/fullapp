@@ -7,7 +7,8 @@ module.exports = {
     'extends': [
         'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended'
+        'plugin:@typescript-eslint/recommended',
+        'plugin:i18next/recommended',
     ],
     'overrides': [
     ],
@@ -18,7 +19,8 @@ module.exports = {
     },
     'plugins': [
         'react',
-        '@typescript-eslint'
+        '@typescript-eslint',
+        'i18next'
     ],
     'rules': {
         'quotes': [
@@ -33,6 +35,7 @@ module.exports = {
         'indent': [2, 4],
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-        '@typescript-eslint/ban-ts-comment': 'warn'
+        '@typescript-eslint/ban-ts-comment': 'warn',
+        'i18next/no-literal-string': ['error', {markupOnly: true, ignoreAttribute: ['data-testid', 'to']}],
     }
 };
