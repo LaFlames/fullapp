@@ -36,6 +36,6 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         '@typescript-eslint/ban-ts-comment': 'warn',
-        'i18next/no-literal-string': ['error', {markupOnly: true, ignoreAttribute: ['data-testid', 'to']}],
+        'i18next/no-literal-string': ['error', {markupOnly: true}],
     }
 };
