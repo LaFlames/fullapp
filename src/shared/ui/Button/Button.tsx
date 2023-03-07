@@ -1,11 +1,10 @@
 import {classNames} from 'shared/lib/classNames/classNames';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore, will fix it later
 import cls from './Button.module.scss';
 import {ButtonHTMLAttributes, FC} from 'react';
 
 export enum ThemeButton {
     CLEAR = 'clear',
+    OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{

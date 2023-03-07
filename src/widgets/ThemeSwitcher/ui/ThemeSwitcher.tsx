@@ -1,9 +1,7 @@
 import {classNames} from 'shared/lib/classNames/classNames';
 import React from 'react';
 import {useTheme} from 'app/providers/ThemeProvider';
-// @ts-ignore
 import LightIcon from 'shared/assets/icons/theme-light.svg';
-// @ts-ignore
 import DarkIcon from 'shared/assets/icons/theme-dark.svg';
 import {Button, ThemeButton} from 'shared/ui/Button/Button';
 
