@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
-    "analyze:prod": "npm run build:prod --env analyze=true",
+    "analyze:prod": "npm run build:prod --env analyze=false",
     "build:dev": "webpack --env mode=development",
     "analyze:dev": "npm run build:dev --env analyze=true",
     "build": "webpack",
