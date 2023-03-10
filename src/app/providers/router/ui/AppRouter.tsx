@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom';
-import {routerConfig} from 'app/providers/router/config/routerConfig';
+import {routerConfig} from 'shared/config/routeConfig/routerConfig';
 import {PageLoader} from 'widgets/PageLoader/PageLoader';
 
 const AppRouter = () => {
