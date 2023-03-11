@@ -37,5 +37,6 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         '@typescript-eslint/ban-ts-comment': 'warn',
         'i18next/no-literal-string': ['error', {markupOnly: true}],
+        '@typescript-eslint/no-var-requires': 0,
     }
 };
